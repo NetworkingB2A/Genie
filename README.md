@@ -16,9 +16,11 @@ Which one do I use, Genie or pyATS?
 BOTH
 
 Which one should I use Ansible or Python in combnation with pyATS|Genie?
-This is up to you.
+This is up to you. What do you want to use and what are you trying to accomplish?
 
-CLI - If you are just learning Genie|pyATS, I reccommend playing around with the Genie CLI. The CLI is not as expandable or as powerfull by itself. However, it's a great way to get started in tool.
+    - CLI - If you are just learning Genie|pyATS, I reccommend playing around with the Genie CLI. The CLI is not as expandable or as powerfull by itself. However, it's a great way to get started in tool.
+    - Python - This is the most customizable. NEED TO ADD MORE INFO HERE
+    - Ansible - NEED TO ADD MORE INFO HERE
 
 What are the modes of Genie?
 
