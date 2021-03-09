@@ -130,4 +130,4 @@ dmypy.json
 
 # testbed file
 # ----- remove the following to omit testbed file/folder
- ./testbed/*
+ ./testbed/testbed.yml
