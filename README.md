@@ -3,14 +3,14 @@ Playing around with Genie and pyATS
 
 What is the difference between pyATS and Genie? 
 - pyATS
-    define topologies and device/interconnects
-    programmatically interact with various devices
-    write, execute and report on test scripts
+    - define topologies and device/interconnects
+    - programmatically interact with various devices
+    - write, execute and report on test scripts
 
 - Genie
-    parsers: converting/formatting command output into Pythonic data structures
-    models: OS/platform agnostic Python classes that represents feature/protocol configuration state and operational status
-    triggers & verifications: reusable pool of data-driven testcases
+    - parsers: converting/formatting command output into Pythonic data structures
+    - models: OS/platform agnostic Python classes that represents feature/protocol configuration state and operational status
+    - triggers & verifications: reusable pool of data-driven testcases
 
 Which one do I use, Genie or pyATS?
 BOTH
