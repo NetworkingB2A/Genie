@@ -102,14 +102,13 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-# -------------- For now I'm taking this out will add later maybe -----------------------
-#.env
-#.venv
-#env/
-#venv/
-#ENV/
-#env.bak/
-#venv.bak/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -128,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# testbed file
+# ----- remove the following to omit testbed file/folder
+ ./testbed/*

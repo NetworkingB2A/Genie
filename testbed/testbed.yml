@@ -1,0 +1,14 @@
+devices:
+  R11:
+    connections:
+      cli:
+        ip: 192.168.1.31
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios

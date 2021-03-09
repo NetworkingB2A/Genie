@@ -1,0 +1,45 @@
+How to create a testbed file.
+    - start up your virtual environment
+        - source venv/bin/activate
+
+    - Genie testbed creator
+        - two different ways
+            - CLI with manual input
+                genie create testbed { source } --output {./folderName/outputFileName}
+
+                Options for { source }
+                    - ansible
+                    - documentation
+                    - file
+                    - interactive
+                    - netbox
+                    - template
+                    - topology
+
+                    What the CLI askes
+
+                    output testbed.yml
+                        genie create testbed interactive --output ./testbed/testbed.yml
+                        Start creating Testbed yaml file ...
+                        Do all of the devices have the same username? [y/n] y
+                        Common Username: cisco
+                        
+                        Do all of the devices have the same default password? [y/n] y
+                        Common Default Password (leave blank if you want to enter on demand): 
+                        
+                        Do all of the devices have the same enable password? [y/n] y
+                        Common Enable Password (leave blank if you want to enter on demand): 
+                        
+                        
+                        Device hostname: R11
+                           IP (ip, or ip:port): 192.168.1.31
+                           Protocol (ssh, telnet, ...): ssh
+                           OS (iosxr, iosxe, ios, nxos, linux, ...): ios
+                        More devices to add ? [y/n] n
+                        Testbed file generated: 
+                        ./testbed/testbed.yml 
+                
+            - ClI with CSV input
+        - Gotcha
+            need to disable ssh key check
+
