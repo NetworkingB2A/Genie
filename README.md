@@ -25,6 +25,9 @@ This is up to you. What do you want to use and what are you trying to accomplish
 What are the modes of Genie?
 
 
+Other Gotcha...
+DO NOT NAME YOU PYTHON FILE genie.py(bad things will happen)
+
 
 I found most of the infomation in different video or websites. Below is a list of the locations I gathered data from.
 - Siming Yuan - "pyATS & Genie – Beneath the Surface" - https://blogs.cisco.com/developer/pyATS-genie-beneath-the-surface
