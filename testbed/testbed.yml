@@ -3,7 +3,59 @@ devices:
     connections:
       cli:
         ip: 192.168.1.31
-        protocol: ssh
+        protocol: telnet
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  R10:
+    connections:
+      cli:
+        ip: 192.168.1.30
+        protocol: telnet
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  R12:
+    connections:
+      cli:
+        ip: 192.168.1.32
+        protocol: telnet
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  R13:
+    connections:
+      cli:
+        ip: 192.168.1.33
+        protocol: telnet
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  R14:
+    connections:
+      cli:
+        ip: 192.168.1.34
+        protocol: telnet
     credentials:
       default:
         password: cisco

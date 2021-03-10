@@ -1,0 +1,22 @@
+R10
+router bgp 10
+neigh 10.10.11.11 remote-as 11
+network 10.10.10.0 mask 255.255.255.0
+
+R11
+router bgp 11
+neigh 10.10.11.10 remote-as 10
+neigh 10.11.12.12 remote-as 12
+network 10.11.11.0 mask 255.255.255.0
+
+R12
+router bgp 12
+neigh 10.12.13.13 remote-as 13
+neigh 10.11.12.11 remote-as 11
+network 10.12.12.0 mask 255.255.255.0
+
+R13
+router bgp 13
+no neigh 10.12.13.12 remote-as 13
+neigh 10.12.13.12 remote-as 12
+network 10.13.13.0 mask 255.255.255.0
