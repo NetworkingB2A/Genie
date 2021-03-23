@@ -1,4 +1,4 @@
-#!./venv/bin/python3 
+#!./venv/bin/python
 from genie.testbed import load
 from pprint import pprint
 from nested_lookup import nested_lookup
