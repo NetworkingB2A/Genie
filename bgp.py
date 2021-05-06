@@ -10,14 +10,14 @@ outputDict= {}
 for router in  tb.devices:
     temp = tb.devices[router]
     temp.connect()
-    bgpParse = temp.parse('show bgp summary')
-    output = nested_lookup('vrf', bgpParse)
-    output2 = {router : output[0]}
-    outputDict.update(output2)
+    bgpParse = temp.parse('show ip route')
+    output = nested_lookup('routes', bgpParse)
+#    output2 = {router : output[0]}
+#    outputDict.update(output2)
 
-for spam, eggs in outputDict.items():
-    print (str(spam) + str(eggs['default']['neighbor'].keys()))
+#for spam, eggs in outputDict.items():
+#    print (str(spam) + str(eggs['default']['neighbor'].keys()))
 
 
 #pprint(outputDict)
-#pprint(bgpParse)
+pprint(output)
