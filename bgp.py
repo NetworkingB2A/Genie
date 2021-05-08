@@ -2,9 +2,10 @@
 from genie.testbed import load
 from pprint import pprint
 from nested_lookup import nested_lookup
+from utils.get_from_netbox import netboxget
 import csv
 
-tb = load('./testbed/testbed.yml')
+tb = load(netboxget())
 outputDict= {}
 
 for router in  tb.devices:

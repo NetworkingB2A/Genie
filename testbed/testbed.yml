@@ -12,4 +12,17 @@ devices:
         password: cisco
     os: ios
     type: ios
-    
+  Router20:
+    connections:
+      cli:
+        ip: 192.168.2.20
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
+  
