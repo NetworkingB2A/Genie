@@ -17,7 +17,8 @@ netbox = pynetbox.api(netbox_url, token=netbox_token)
 
 #Here i called out my roles for my devices for my netbox
 #TODO: need to make this more dynamic so I don't have the static entries
-devices = netbox.dcim.devices.filter(role=["lab-router", "lab-switch"])
+#devices = netbox.dcim.devices.filter(role=["lab-router", "lab-switch"])
+devices = netbox.dcim.devices.filter(role="lab-router")
 
 #This dictionary is needed to make pyATS happy
 testbed={"devices": {}}
