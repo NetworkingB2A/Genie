@@ -25,4 +25,16 @@ devices:
         password: cisco
     os: ios
     type: ios
-  
+  Angell-Office-Sw:
+    connections:
+      cli:
+        ip: 192.168.1.5
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
