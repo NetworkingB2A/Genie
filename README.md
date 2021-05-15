@@ -4,6 +4,7 @@ Playing around with Genie and pyATS
 ## TODO: few things to fix/update
   - Change the testbed load to happen outside of the classes
   - Change the testbed to iterate over each class rather then each class going over the devices
+  - Add a function to the CDP neighbor class that will update my testbed file. (Maybe, but need to figure out a wait to dynamically update my testbed file)
 
 What is the difference between pyATS and Genie? 
 - pyATS
