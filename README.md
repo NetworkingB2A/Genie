@@ -1,6 +1,10 @@
 # Genie
 Playing around with Genie and pyATS
 
+## TODO: few things to fix/update
+  - Change the testbed load to happen outside of the classes
+  - Change the testbed to iterate over each class rather then each class going over the devices
+
 What is the difference between pyATS and Genie? 
 - pyATS
     - define topologies and device/interconnects
