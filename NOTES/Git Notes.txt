@@ -1,0 +1,51 @@
+basic Git commands/terminology
+
+create these first when you want to pull down config. This is meta data about youself, needed for git commands later on.
+  - git config --global user.name "Your Name"
+  - git config --global user.email "your_email@whatever.com"
+
+git clone "hyperlink"
+   - this is copy a git repository to your computer
+
+git pull
+  - this will pull the updates from a online repository to your local repository.
+
+git pull request
+  - This one messed with my head for a while, the following is the best way I think to explain it
+  - if you make a change to someone else's source code and you want that change to be in the source code you submit a pull request.
+  - Meaning you are asking them to pull your changes into their code.
+
+
+git add (file name or directory location)
+  - Also called Git stages
+  - This is stage your commit and get them ready for commiting your change
+  - You want to stage like code changes together and commit those changes at one time because you can add notes and look at different commits when auditing the code.
+
+git status
+  - This will tell you if your local git repository matches up with the main repository
+
+git branch 
+ - To understand this it really helps to understand how pointers work or cnames
+ - a Cname is just an alias that points to the main domain name. you can make changes to the cname and never update the original record.
+ - In this case i can creating an alias of the code, updating the alias. Then later i may ask my branch to update the main code
+ - This actual code will show the branches i have, or i can create and delete my branches 
+
+git checkout 
+  - this will allow you to change between branches
+
+git pull vs get fetch 
+  - I dont really know yet.
+
+The only two reasons i would use this next part is
+  - because I dont want to log into the gui
+  - I want to change my repository name
+
+Creating a new repository
+  - create a directory
+    - mkdir train_git
+    - cd train_git
+    - touch "hello_world.txt"
+  - create a new repository
+    - git init
+    - git add hello_world.txt
+    - git commit -m "adding first file"
