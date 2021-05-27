@@ -1,4 +1,49 @@
+What is Git?
+Git allows you to have version control of your software.
+Git tracks changes to source code.
+
+
+
+
 basic Git commands/terminology
+
+create these first when you want to pull down config. This is meta data about youself, needed for git commands later on.
+  - git config --global user.name "Your Name"
+  - git config --global user.email "your_email@whatever.com"
+
+Creating a new repository
+  - create a directory
+    - mkdir train_git
+    - cd train_git
+    - touch "hello_world.txt"
+  - create a new repository
+    - git init 
+      - This will create a repository for your project. That repository is stored on your computer.
+    - git add hello_world.txt  
+      - This will create a snapshot of the project. you can add a single file or many files. This didnt create the snapshot. this is just the first step. this is acutally called the index in git.
+    - git commit -m "adding first file" 
+      - This will create a snapshot from your index, and this will add to your repository. good practice to give details about this commit. you should only commit the files that you want to change.
+
+Data about your current git project ( I cant think of a better name yet.) 
+  - git log 
+    - this will show the history of the snapshot
+  - git status 
+    - This will tell you if your file are commited in your repository.
+  - git diff (some commit id) (some other commit id )
+    - this will show the differences in the git snapshots. if you want to see the differences in your commits your must put the commit code. you only need to see the first few digits and not the whole code.
+
+git checkout (newer versions of git can use a get switch)
+  git checkout (some commit id)
+  - this will allow you to change between commits
+  - this will take that commit and puts in our file system
+  - in doing this you can grab your old commit that was working and have it fix a new bug that you may have introduced 
+
+
+
+
+
+
+
 
 create these first when you want to pull down config. This is meta data about youself, needed for git commands later on.
   - git config --global user.name "Your Name"
@@ -21,8 +66,7 @@ git add (file name or directory location)
   - This is stage your commit and get them ready for commiting your change
   - You want to stage like code changes together and commit those changes at one time because you can add notes and look at different commits when auditing the code.
 
-git status
-  - This will tell you if your local git repository matches up with the main repository
+
 
 git branch 
  - To understand this it really helps to understand how pointers work or cnames
@@ -30,8 +74,7 @@ git branch
  - In this case i can creating an alias of the code, updating the alias. Then later i may ask my branch to update the main code
  - This actual code will show the branches i have, or i can create and delete my branches 
 
-git checkout 
-  - this will allow you to change between branches
+
 
 git pull vs get fetch 
   - I dont really know yet.
@@ -40,12 +83,3 @@ The only two reasons i would use this next part is
   - because I dont want to log into the gui
   - I want to change my repository name
 
-Creating a new repository
-  - create a directory
-    - mkdir train_git
-    - cd train_git
-    - touch "hello_world.txt"
-  - create a new repository
-    - git init
-    - git add hello_world.txt
-    - git commit -m "adding first file"
