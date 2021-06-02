@@ -39,15 +39,12 @@ git checkout (newer versions of git can use a get switch)
   - in doing this you can grab your old commit that was working and have it fix a new bug that you may have introduced 
 
 
+What is a Branch?
 
 
 
 
-
-
-create these first when you want to pull down config. This is meta data about youself, needed for git commands later on.
-  - git config --global user.name "Your Name"
-  - git config --global user.email "your_email@whatever.com"
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 git clone "hyperlink"
    - this is copy a git repository to your computer
@@ -69,6 +66,7 @@ git add (file name or directory location)
 
 
 git branch 
+ 
  - To understand this it really helps to understand how pointers work or cnames
  - a Cname is just an alias that points to the main domain name. you can make changes to the cname and never update the original record.
  - In this case i can creating an alias of the code, updating the alias. Then later i may ask my branch to update the main code
