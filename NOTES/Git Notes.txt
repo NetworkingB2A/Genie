@@ -37,7 +37,7 @@ Data about your current git project ( I cant think of a better name yet.)
     - this will show the differences in the git snapshots. if you want to see the differences in your commits your must put the commit code. you only need to see the first few digits and not the whole code.
     - if you add a --staged you will see a difference between your commited files and your staged files 
     - if you want to see a difference in your working directory that has not been staged, just use a git diff.
-  - git reset ()
+  - git reset () - testing out this
 
 git checkout (newer versions of git can use a get switch)
   git checkout (some commit id)
