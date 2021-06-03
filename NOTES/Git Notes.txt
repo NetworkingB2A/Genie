@@ -54,7 +54,14 @@ Data about your current git project ( I cant think of a better name yet.)
     - this will show the differences in the git snapshots. if you want to see the differences in your commits your must put the commit code. you only need to see the first few digits and not the whole code.
     - if you add a --staged you will see a difference between your commited files and your staged files 
     - if you want to see a difference in your working directory that has not been staged, just use a git diff.
-  - git reset () - testing out this
+  - git reset  
+    - this will allow us to throw changes away 
+    - allows us to move commits from history to our working or staging area
+    - can be a destructive command
+    - three real options
+      - use a --soft (commit-ID), move commit to staging area
+      - use a --mixed (commit-ID), move commit to the working directory 
+      - use a --hard (commit-ID), this will move you commits to the trash
   - git rm (file name)
     - this will stop tracking a file/delete the file
     - Adding a --cached file name will stop tracking the file but will not remove it
