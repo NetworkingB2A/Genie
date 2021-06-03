@@ -1,6 +1,9 @@
 What is Git?
-Git allows you to have version control of your software.
-Git tracks changes to source code.
+  - Git allows you to have version control of your software.
+  - Git tracks changes to source code.
+
+Why do you need git?
+  - git allows sharing code amongst developers
 
 
 
@@ -37,11 +40,26 @@ git checkout (newer versions of git can use a get switch)
   - this will allow you to change between commits
   - this will take that commit and puts in our file system
   - in doing this you can grab your old commit that was working and have it fix a new bug that you may have introduced 
+  git checkout (branch-Name)
+  - This will allow you to Branch your code
+
+git merge 
+  git merge (main-branch)
+  - this will allow you to keep two different versions of code and keep one as you main and the other as your different set of features. (kind of hard to explain for me.)
+  - if you have an app. one paid version of the app and the other free version. if you wanted all you paid version of the app to have all the same features of your free version plus some extra features. you would do the following.
+    - You would have two branches -Free -Paid
+    - you would then switch to your paid version
+    - You would then merge to your free version
+    - doing this would allow you to take all your code from the free version and have it in your paid branch
+    - But it would not work in reverse. your free version would not have the features from your paid version.
 
 
 What is a Branch?
+  - is a way of taking your code and branching off of your main code.
+  - exactly like a tree
 
-
+What is a conflict?
+  - if two commits change the same line of code. you can have a conflict in that code.
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

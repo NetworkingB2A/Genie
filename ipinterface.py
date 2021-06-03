@@ -11,8 +11,8 @@ outputDict= {}
 for router in  tb.devices:
     temp = tb.devices[router]
     temp.connect()
-    output = temp.learn('vrf')
+    #output = temp.learn('vrf')
     #tester = output.q.contains('entry_addresses')
     output2 = temp.parse('show vrf')
-    print(output)
+    #print(output)
     print(output2)
