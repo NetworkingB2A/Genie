@@ -55,6 +55,9 @@ Data about your current git project ( I cant think of a better name yet.)
     - if you add a --staged you will see a difference between your commited files and your staged files 
     - if you want to see a difference in your working directory that has not been staged, just use a git diff.
   - git reset () - testing out this
+  - git rm (file name)
+    - this will stop tracking a file/delete the file
+    - Adding a --cached file name will stop tracking the file but will not remove it
 
 git checkout (newer versions of git can use a get switch)
   git checkout (some commit id)
