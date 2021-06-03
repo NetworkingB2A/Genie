@@ -26,10 +26,27 @@ Creating a new repository
       - This will create a snapshot of the project. you can add a single file or many files. This didnt create the snapshot. this is just the first step. this is acutally called the index in git.
     - git commit -m "adding first file" 
       - This will create a snapshot from your index, and this will add to your repository. good practice to give details about this commit. you should only commit the files that you want to change.
+      - git message tips and tricks (https://chris.beams.io/posts/git-commit/)
+        - separate subject line from body with a blank line 
+        - limit the subject line to 50 characters
+        - Capitalize the subject line
+        - Do not end teh subject line with a period
+        - use the imperative mood in the subject line 
+        - Wrap the body at 72 characters
+        - Use the body to explain what and why vs how
+
 
 Data about your current git project ( I cant think of a better name yet.) 
   - git log 
     - this will show the history of the snapshot
+    - git log -(number) 
+      - this will show a certain number of commits
+    - git log --oneline
+      - shortens to one line showing commit message and hash code
+    - git log --stat 
+      - shows number of lines that changed with each commit 
+    - git log --diff
+      - shows all the differences in the commits
   - git status 
     - This will tell you if your file are commited in your repository.
     - You can put a --short or -s and you will see a shorter list of your current status ( kinda nice when you do this via cli)
