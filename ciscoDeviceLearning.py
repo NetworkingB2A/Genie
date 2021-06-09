@@ -9,7 +9,7 @@ tb = load(netboxget())
 print("starting learns")
 for device in tb.devices:
     tempConnect = tb.devices[device]
-    tempConnect.connect(log_stdout=True)
+    tempConnect.connect(log_stdout=False)
     networkObject = LearnIOSInfo(tempConnect, device)
     networkObject.LearningRouting()
     networkObject.LearningCDPNeighbors()
