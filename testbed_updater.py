@@ -23,7 +23,6 @@
 
 
 Router19 = {
-    "name": {
         "Router19": {
             "connections": {"cli": {"ip": "192.168.2.19", "protocol": "ssh"}},
             "credentials": {
@@ -33,4 +32,3 @@ Router19 = {
             "os": "ios",
         }
     }
-}
