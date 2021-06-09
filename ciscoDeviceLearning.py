@@ -5,14 +5,14 @@ from utils.learnIOSInfo import LearnIOSInfo
 from genie.testbed import load
 
 
-#CDP = LearnCDPNeighbor(netboxget())
-#git test
+# CDP = LearnCDPNeighbor(netboxget())
+# git test
 
 
 tb = load(netboxget())
 
-print ('starting learns')
-for device in  tb.devices:
+print("starting learns")
+for device in tb.devices:
     tempConnect = tb.devices[device]
     tempConnect.connect(log_stdout=False)
     networkObject = LearnIOSInfo(tempConnect, device)
@@ -20,7 +20,6 @@ for device in  tb.devices:
     networkObject.LearningCDPNeighbors()
 
 
-
-#print('learning CDP Neighbors')
-#CDP.LearningCDPNeighbors()
-print('learn complete')
+# print('learning CDP Neighbors')
+# CDP.LearningCDPNeighbors()
+print("learn complete")
