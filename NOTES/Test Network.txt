@@ -1,0 +1,3 @@
+test goal 1
+- verify  every device in testbed is reachable
+- Verify no network interfaces report errors

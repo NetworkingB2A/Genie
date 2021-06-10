@@ -32,7 +32,56 @@ This is up to you. What do you want to use and what are you trying to accomplish
 
 What are the modes of Genie?
 
+What makes up a pyATS Network test project?
+    - Testbed
+      - YAML Files
+      - Describes network topology
+    - AEtest Testscripts
+      - 1 or more Python Files
+      - Define setup, execution and cleanup of tests
+    - Easypy jobfiles
+      - Python files
+      - Combines testscripts and defines runtime, logging and archives
 
+    |--- Testbed.yaml
+    |---Network_test_projects
+    |   |---testbed_connections.py
+    |   |---interface_errors.py
+    |   |---network_test_job.py
+    | 
+
+    # Convenience Commands
+    pyats create testbed
+    pyats create project
+
+AEtest Testscript Basics
+- Phases
+  1. CommonSetup
+    - Everything that must be done before your can actually run your test
+  2. Testcase(s)
+    - This is the actual test you want to run
+    - Cleanup might not always need to happen so you may decide to ommit the setup or clean up steps
+  3. CommonCleanup
+    - This is to cleanup anything you need to clean
+- View the example folder
+
+Easypy Jobfiles
+- A "job" is a combination of test scripts together for excution
+- Each testscript to be run is a "task"
+  - Note: taskid is optional and defaults to Task-#
+- Each job executions generates single log and archive
+- View the example folder
+
+How you would run the job
+
+<code> pyats run job sample2/sample2_job.py --testbed testbedFile.yaml </code>
+
+### Protip
+Use the following command to view your logs locally:
+
+<code>pyats logs view</code>
+^^^
+This will give you a HTML file in an easy to read format
 Other Gotcha...
 DO NOT NAME YOU PYTHON FILE genie.py(bad things will happen)
 
