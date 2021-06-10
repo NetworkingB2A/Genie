@@ -1,28 +1,26 @@
+testbed:
+  name: Network defaults
+  credentials:
+    default:
+      password: cisco
+      username: cisco
+    enable:
+      password: cisco
+
 devices:
   Router10:
+    os: ios
+    type: ios
     connections:
       cli:
         ip: 192.168.2.10
         protocol: ssh
-    credentials:
-      default:
-        password: cisco
-        username: cisco
-      enable:
-        password: cisco
+  Router20:
     os: ios
     type: ios
-  Router20:
     connections:
       cli:
         ip: 192.168.2.20
         protocol: ssh
-    credentials:
-      default:
-        password: cisco
-        username: cisco
-      enable:
-        password: cisco
-    os: ios
-    type: ios
+
   
