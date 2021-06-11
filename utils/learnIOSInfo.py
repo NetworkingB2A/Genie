@@ -8,9 +8,14 @@ from nested_lookup import nested_lookup
 
 class LearnIOSInfo:
     
+    testbedDeviceCount = 0
+
     def __init__(self, networkDevice, deviceName):
         self.networkDevice = networkDevice
         self.deviceName = deviceName
+        
+        LearnIOSInfo.testbedDeviceCount += 1
+
 
     def LearningRouting(self):
         ipRoutes = self.networkDevice.parse("show ip route ")
