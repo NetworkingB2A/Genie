@@ -50,19 +50,19 @@ What makes up a pyATS Network test project?
     |   |---network_test_job.py
     | 
 
-    # Convenience Commands
+  ## Convenience Commands
     pyats create testbed
     pyats create project
 
 AEtest Testscript Basics
 - Phases
   1. CommonSetup
-    - Everything that must be done before your can actually run your test
+     - Everything that must be done before your can actually run your test
   2. Testcase(s)
-    - This is the actual test you want to run
-    - Cleanup might not always need to happen so you may decide to ommit the setup or clean up steps
+     - This is the actual test you want to run
+     - Cleanup might not always need to happen so you may decide to ommit the setup or clean up steps
   3. CommonCleanup
-    - This is to cleanup anything you need to clean
+     - This is to cleanup anything you need to clean
 - View the example folder
 
 Easypy Jobfiles
@@ -80,8 +80,20 @@ How you would run the job
 Use the following command to view your logs locally:
 
 <code>pyats logs view</code>
+
 ^^^
 This will give you a HTML file in an easy to read format
+
+## Other Notes
+- if you do not want to enter config mode enter the following in your testbed connect 
+
+  <code> testbed.connect(init_exec_commands=[], init_config_commands=[])</code>
+
+
+- if you do not want to see all the connection status enter the following into your testbed connect
+
+  <code> testbed.connect(log_stdout=False)</code>
+
 Other Gotcha...
 DO NOT NAME YOU PYTHON FILE genie.py(bad things will happen)
 

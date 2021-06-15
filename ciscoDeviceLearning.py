@@ -12,7 +12,7 @@ print("Number of devices to learn: " + str(deviceCount))
 
 for device in tb.devices:
     tempConnect = tb.devices[device]
-    tempConnect.connect(log_stdout=False)
+    tempConnect.connect(init_exec_commands=[], init_config_commands=[],log_stdout=False)
     networkObject = LearnIOSInfo(tempConnect, device)
     print(f"Current Number of devices to learn: {str(LearnIOSInfo.testbedDeviceCount)} / { str(deviceCount)} ")
     networkObject.LearningRouting()
