@@ -1,0 +1,4 @@
+
+I added the following to avoid the Diffie-hellman ssh error
+    In /etc/ssh/ssh_config write:
+        KexAlgorithms diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
