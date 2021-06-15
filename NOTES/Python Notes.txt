@@ -1,3 +1,21 @@
+import
+  - An import statement allows you to use others modules, functions, classes, Etc.
+functions
+  - a set of instructions to preform a task
+Methods
+  - a set of instructions to preform a task on an object
+modules
+  - a modules is just python code. Classes and functions are examples of a module
+packages
+  - A package is a folder of modules but has a initialing script in the folder
+Class
+  - A class is the creation of an object
+SDK
+  - an SDK (software development kit) is a set of programs and tools that are generally created and deployed by a vendor. It's a bunch of classes, packages, and modules that are written for you to make it easier for you to use their product in your code.
+
+
+
+
 self.VarName would be an instance variable.
   - Generally if a variable starts with self. it is a instance variable
 Class variables are shared with all instances of a Class
