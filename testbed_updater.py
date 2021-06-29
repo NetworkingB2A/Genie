@@ -32,3 +32,81 @@ Router19 = {
             "os": "ios",
         }
     }
+
+
+new_device = topology.Device('Router19')
+
+>>> pprint(tb.__dict__)
+{'alias': 'Network defaults',
+ 'clean': AttrDict({}),
+ 'credentials': Credentials(NestedAttrDict({'default': NestedAttrDict({'password': ****************, 'username': 'cisco'}), 'enable': NestedAttrDict({'password': ****************})})),
+ 'custom': AttrDict({}),
+ 'devices': {'': <Testbed object '' at 0x7fbaaa4000f0>,
+             'Router10': <Device Router10 at 0x7fbaca3d1ac8>,
+             'Router20': <Device Router20 at 0x7fbaca3ee208>},
+ 'ipv4_cache': <genie.conf.base.utils.IPv4InterfaceCache object at 0x7fbaca3c2fd0>,
+ 'ipv6_cache': <genie.conf.base.utils.IPv6InterfaceCache object at 0x7fbaca3d19e8>,
+ 'mac_cache': <genie.conf.base.utils.MACCache object at 0x7fbaca3d1940>,
+ 'name': 'Network defaults',
+ 'passwords': {'enable': 'lab',
+               'line': 'lab',
+               'linux': 'lab',
+               'tacacs': 'lab'},
+ 'raw_config': {'devices': {'Router10': {'connections': {'cli': {'ip': '192.168.2.10',
+                                                                 'protocol': 'ssh'}},
+                                         'os': 'ios',
+                                         'type': 'ios'},
+                            'Router20': {'connections': {'cli': {'ip': '192.168.2.20',
+                                                                 'protocol': 'ssh'}},
+                                         'os': 'ios',
+                                         'type': 'ios'}},
+                'testbed': {'credentials': {'default': {'password': 'cisco',
+                                                        'username': 'cisco'},
+                                            'enable': {'password': 'cisco'}},
+                            'name': 'Network defaults',
+                            'testbed_file': './testbed/testbed.yml'},
+                'topology': {}},
+ 'servers': AttrDict({}),
+ 'tacacs': {'login_prompt': 'login:',
+            'password_prompt': 'Password:',
+            'username': 'angella'},
+ 'testbed_file': './testbed/testbed.yml'}
+
+
+
+Router19 = { 'name': 'Network defaults',
+ 'passwords': {'enable': 'lab',
+               'line': 'lab',
+               'linux': 'lab',
+               'tacacs': 'lab'},
+ 'raw_config': {'devices': {'Router10': {'connections': {'cli': {'ip': '192.168.2.10',
+                                                                 'protocol': 'ssh'}},
+                                         'os': 'ios',
+                                         'type': 'ios'}}}}
+
+
+
+!!!!! This worked, I can add devices to my testbed !!!!!!!!!!!!!!!!!!!!
+
+>>> from pyats import topology
+>>> Router19 = {
+...         "Router19": {
+...             "connections": 
+                  {"cli": 
+                    {"ip": "192.168.2.19", 
+                    "protocol": "ssh"}},
+...               "credentials": {
+...                 "default": 
+                      {"password": "cisco", 
+                       "username": "cisco"},
+...                 "enable": 
+                      {"password": "cisco"},
+...             },
+...             "os": "ios",
+...         }
+...     }
+>>> new_device = topology.Device('Router19')
+>>> testbed.add_device(new_device)
+>>> tb.add_device(new_device)
+>>> tb.devices
+TopologyDict({'Router10': <Device Router10 at 0x7fbaca3d1ac8>, 'Router20': <Device Router20 at 0x7fbaca3ee208>, '': <Testbed object '' at 0x7fbaaa4000f0>, 'Router19': <Device Router19 at 0x7fbaaa4003c8>})
