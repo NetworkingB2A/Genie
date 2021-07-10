@@ -83,6 +83,22 @@ git merge
     - You would then merge to your free version
     - doing this would allow you to take all your code from the free version and have it in your paid branch
     - But it would not work in reverse. your free version would not have the features from your paid version.
+  - some terminology
+    - Target branch - The branch of where the changes are being pulled from
+    - Receiving branch - The branch where your changes are being pulled into.
+  - Conflicts in file changes need to be resolved manually
+
+  Fast forward merge
+          --0--0--0 <- master branch
+         /
+  --0--0/
+
+3-way merge
+       ---0-0--0--
+       /          \
+      /            \        
+--0--0----0----0----0-- Master
+
 
 
 What is a Branch?
