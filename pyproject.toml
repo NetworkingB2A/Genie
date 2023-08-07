@@ -4,4 +4,4 @@ version = "0.1.0"
 description = ""
 authors = ["Adam Angell <adam.angell@networkingb2a.com>"]
 readme = "README.md"
-packages = [{include = "pyats-netbox"}]
+packages = [{include = "utils"}]
