@@ -1,2 +1,0 @@
-Lets start with location 
-Country, State, City, Address, Building, Alias Lat, Long, Network Alias( State, City - Alias), Location Code
